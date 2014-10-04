@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DisplayMessageActivity" >
+
+    <TextView
+        android:id="@+id/directions_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/directions_header"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        />
+    
+    <TextView
+        android:id="@+id/directions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions_header"
+        android:text="@string/hello_world"
+        android:textSize="18sp"
+        />
+    
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/map_button"
+        android:visibility="invisible"
+        android:onClick="showMap" />
+    
+    <RadioGroup 
+        android:id="@+id/preferences_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/map_button"
+        android:orientation="vertical"
+        android:background="@drawable/back" >
+    	
+        <RadioButton
+            android:id="@+id/button_shortest_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="applyPreference"
+            android:text="@string/button_shortest_distance" />
+        
+        <RadioButton
+            android:id="@+id/button_stairs_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="applyPreference"
+            android:text="@string/button_stairs_only" />
+        
+        <RadioButton
+            android:id="@+id/button_elevator_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="applyPreference"
+            android:text="@string/button_elevator_only" />
+        
+    </RadioGroup>
+
+</RelativeLayout>

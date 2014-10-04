@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InRoute</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_start_room">Start Room</string>
+    <string name="search_end_room">End Room</string>
+    <string name="button_search">Search</string>
+    <string name="button_floor_1">1</string>
+    <string name="button_floor_2">2</string>
+    <string name="button_floor_3">3</string>
+    <string name="button_shortest_distance">Use shortest route</string>
+    <string name="button_stairs_only">Use stairs only</string>
+    <string name="button_elevator_only">Use elevators only</string>
+    <string name="map_button">View Map</string>
+    <string name="directions_header">Directions:</string>
+    <string name="title_activity_main">CSIC</string>
+    <string name="title_activity_display_message">Directions</string>
+
+</resources>
